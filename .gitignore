@@ -21,6 +21,7 @@ target/
 *.class
 *.png
 *.html
+!Weather_07_26_03_33.html
 
 ### Eclipse ###
 .apt_generated
