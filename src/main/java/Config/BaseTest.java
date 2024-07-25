@@ -97,7 +97,7 @@ public class BaseTest {
             objResult.setThrowable(e);
             ExtentVariables.test.log(Status.FAIL, "Test Case Failed");
             ExtentVariables.test.log(Status.FAIL, "Issue -> " + e);
-       //     ExtentVariables.test.addScreenCaptureFromPath(getScreenshot());
+            ExtentVariables.test.addScreenCaptureFromPath(base.get_Screenshot());
         } else if (testResult == ITestResult.SKIP) {
             ExtentVariables.test.log(Status.SKIP, "Test Case Skipped ");
             Markup m = MarkupHelper.createLabel("Skipped", ExtentColor.YELLOW);
